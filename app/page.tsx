@@ -9,8 +9,7 @@ interface ActionItem {
   modalTitle: string
   modalMessage: string
   href: string
-  image: string
-  modalImage?: string
+  modalImages: string[] // Agora é obrigatório
 }
 
 export default function AcademicWorks() {
@@ -19,6 +18,7 @@ export default function AcademicWorks() {
   const [showConfirmModal, setShowConfirmModal] = useState(false)
   const [showImageModal, setShowImageModal] = useState(false)
   const [selectedItem, setSelectedItem] = useState<ActionItem | null>(null)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   useEffect(() => {
     setIsVisible(!pathname.includes("/configuracoes"))
@@ -76,8 +76,9 @@ Os pais são pessoas que devem ser consideradas preciosas e queridas para os fil
 
 Então ao falar com jovens nosso objetivo é, citar os 2 textos passados aqui, raciocinar com eles e mostrar que serão felizes por obedecer aos seus pais, assim seu futuro vai ser seguro e com a possibilidade de viver para sempre na terra.`,
       href: "",
-      image: "/images/Uninter.jpg",
-      modalImage: "/images/trabalho2.jpg",
+      modalImages: [
+      "/images/semimagem.gif"
+      ]
     },
 
     {
@@ -110,8 +111,9 @@ Notaram que no texto fala que o nome de Deus é Jeová, e somente ele é o deus 
 
 Claro irmãos, que ainda a muitos textos que podemos usar para ajudar os outros a conhecer a Jeová e é por isso não devemos desanimar, nós precisamos continuar pregando com zelo buscando ajudar o maior número de pessoas a conhecer o nome de Jeová, ajudando-as a desenvolver fé em Jeová e assim conquistar a salvação.`,
       href: "",
-      image: "/images/Uninter.jpg",
-      modalImage: "/images/trabalho1.jpg",
+      modalImages: [
+      "/images/semimagem.gif"
+      ]
     },
 
     {
@@ -160,8 +162,9 @@ Viu como esse texto nos traz coragem, e ao escutar Jesus e continuarmos pregando
 
 Por isso irmãos nós queremos sempre continuarmos escutando a Jesus e nos manter vigilantes por continuar a pregar as boas novas sem desanimar, e se fizermos isso, com certeza vamos ser ricamente abençoados e vamos alegrar e mostrar que amamos a Jesus e a seu pai Jeová.`,
       href: "",
-      image: "/images/Uninter.jpg",
-      modalImage: "/images/trabalho3.jpg",
+      modalImages: [
+      "/images/semimagem.gif"
+      ]
     },
     {
       label: "Devemos nos Preocupar com Mudanças?",
@@ -225,8 +228,9 @@ Por isso precisamos ter sabedoria principalmente nos dias atuais, vamos ver um �
 
 E sim continuar a pedir sabedoria para que possamos nos adaptar nesse tempo do fim. `,
       href: "",
-      image: "/images/Uninter.jpg",
-      modalImage: "/images/trabalho4.png",
+      modalImages: [
+      "/images/semimagem.gif"
+      ]
     },
     {
       label: "Casa em Casa",
@@ -254,24 +258,26 @@ Para Jeová, todas as pessoas são preciosas. E ele nos dá o privilégio de tra
 
 Sabemos que Jeová pode usar qualquer 1 de nós, mas assim como disse um irmão nosso na Bolívia chamado Andreas: "Para mim cada pessoa que se batiza é resultado de um trabalho em equipe" Então irmãos e amigos aqui presentes se tivermos esse mesmo ponto de vista positivo sobre nosso ministério, nós continuaremos uteis e a dar bons fruto para o reino de Jeová. `,
       href: "",
-      image: "/images/Uninter.jpg",
-      modalImage: "/images/trabalho5.png",
+      modalImages: [
+        ""
+      ]
     },
     {
       label: "Vazio",
       modalTitle: "Esperando...",
       modalMessage:
-        `Já Já mais trabalhos serão apresentados`,
+        `...`,
       href: "",
-      image: "/images/Vazio.jpg",
-      modalImage: "/images/Vazio.jpg",
+      modalImages: [
+      "/images/semimagem.gif"
+      ]
     }, 
   ]
-
 
   function handleOpen(item: ActionItem) {
     setSelectedItem(item)
     setShowConfirmModal(true)
+    setCurrentImageIndex(0)
   }
 
   function handleCancel() {
@@ -287,6 +293,21 @@ Sabemos que Jeová pode usar qualquer 1 de nós, mas assim como disse um irmão 
   function handleCloseImage() {
     setShowImageModal(false)
     setSelectedItem(null)
+    setCurrentImageIndex(0)
+  }
+
+  function nextImage() {
+    if (!selectedItem?.modalImages) return
+    setCurrentImageIndex((prevIndex) => 
+      prevIndex === selectedItem.modalImages.length - 1 ? 0 : prevIndex + 1
+    )
+  }
+
+  function prevImage() {
+    if (!selectedItem?.modalImages) return
+    setCurrentImageIndex((prevIndex) => 
+      prevIndex === 0 ? selectedItem.modalImages.length - 1 : prevIndex - 1
+    )
   }
 
   return (
@@ -301,13 +322,13 @@ Sabemos que Jeová pode usar qualquer 1 de nós, mas assim como disse um irmão 
         </p>
       </div>
 
-      {/* Grid de trabalhos */}
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Lista de trabalhos em uma única coluna */}
+      <div className="container mx-auto px-4 py-12 max-w-3xl">
+        <div className="space-y-8">
           {actions.map((action, idx) => (
             <div
               key={action.label + idx}
-              className="relative group transform hover:scale-105 transition-transform duration-300 cursor-pointer"
+              className="relative group transform hover:scale-[1.02] transition-transform duration-300 cursor-pointer"
               onClick={() => handleOpen(action)}
             >
               {/* Moldura decorativa */}
@@ -315,84 +336,115 @@ Sabemos que Jeová pode usar qualquer 1 de nós, mas assim como disse um irmão 
               <div className="absolute inset-1 border-2 border-amber-500/50 rounded pointer-events-none"></div>
               
               {/* Carta de trabalho */}
-              <div 
-                className="relative w-full h-64 rounded bg-stone-800 overflow-hidden bg-cover bg-center shadow-lg"
-                style={{ backgroundImage: `url(${action.image})` }}
-              >
-                {/* Overlay e título */}
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 flex items-end p-4">
-                  <h3 className="text-xl font-pixel text-amber-200 text-center w-full">
-                    {action.label}
-                  </h3>
-                </div>
-                
-                {/* Selo de categoria */}
-                <div className="absolute top-2 right-2 bg-amber-700 text-amber-100 font-pixel text-xs px-2 py-1 rounded-full">
-                  {action.modalTitle.includes("5 Minutos") ? "5 Minutos" : 
-                   action.modalTitle.includes("10 Minutos") ? "10 Minutos" : "Vazio"}                   
+              <div className="relative w-full min-h-32 rounded bg-stone-800 overflow-hidden shadow-lg p-6">
+                {/* Conteúdo */}
+                <div className="flex flex-col h-full">
+                  <div className="flex-grow">
+                    <h3 className="text-xl font-pixel text-amber-200">
+                      {action.label}
+                    </h3>
+                    <p className="text-amber-100 mt-2 text-sm line-clamp-3">
+                      {action.modalMessage.substring(0, 150)}...
+                    </p>
+                  </div>
+                  
+                  {/* Rodapé */}
+                  <div className="mt-4 flex justify-between items-center">
+                    <div className="bg-amber-700 text-amber-100 font-pixel text-xs px-2 py-1 rounded-full">
+                      {action.modalTitle.includes("5 Minutos") ? "5 Minutos" : 
+                       action.modalTitle.includes("10 Minutos") ? "10 Minutos" : "Vazio"}                   
+                    </div>
+                    <span className="text-amber-300 text-sm font-pixel">
+                      Clique para ver detalhes
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
+              </div>
           ))}
         </div>
       </div>
 
-      {/* Modal de descrição (estilo pergaminho) */}
+      {/* Modal de descrição */}
       {showConfirmModal && selectedItem && (
-        <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
-          <div className="bg-stone-800 border-4 border-amber-700 rounded-lg p-6 max-w-4xl w-full max-h-[90vh] overflow-auto shadow-xl">
-            <div className="border-b border-amber-600 pb-3 mb-4">
-              <h2 className="text-2xl font-pixel text-amber-300 text-center">
-                {selectedItem.modalTitle}
-              </h2>
-            </div>
-            
-            <div className="bg-stone-700/80 border border-amber-900 p-4 rounded mb-6">
-              <pre className="font-mono text-amber-100 text-sm whitespace-pre-wrap overflow-auto">
-                {selectedItem.modalMessage}
-              </pre>
-            </div>
-            
-            <div className="flex justify-center space-x-4">
-              <Button 
-                onClick={handleCancel}
-                className="font-pixel bg-stone-700 hover:bg-stone-600 text-amber-300 border border-amber-700"
-              >
-                Voltar
-              </Button>
-              <Button 
-                onClick={handleConfirm}
-                className="font-pixel bg-amber-700 hover:bg-amber-600 text-stone-100"
-              >
-                Ver Imagens
-              </Button>
-            </div>
-          </div>
+  <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
+    <div className="bg-stone-800 border-4 border-amber-700 rounded-lg p-6 max-w-3xl w-full max-h-[90vh] overflow-auto shadow-xl">
+      <div className="border-b border-amber-600 pb-3 mb-4">
+        <h2 className="text-2xl font-pixel text-amber-300 text-center">
+          {selectedItem.modalTitle}
+        </h2>
+        <p className="text-amber-200 text-center font-pixel mt-1">
+          {selectedItem.label}
+        </p>
+      </div>
+      
+      <div className="bg-stone-700/80 border border-amber-900 p-4 rounded mb-6">
+        <div className="text-amber-100 text-sm whitespace-pre-wrap">
+          {selectedItem.modalMessage}
         </div>
-      )}
+      </div>
+      
+      <div className="flex justify-center space-x-4">
+        <Button 
+          onClick={handleCancel}
+          className="font-pixel bg-stone-700 hover:bg-stone-600 text-amber-300 border border-amber-700"
+        >
+          Voltar
+        </Button>
+        {selectedItem.modalImages.length > 0 && (
+          <Button 
+            onClick={handleConfirm}
+            className="font-pixel bg-amber-700 hover:bg-amber-600 text-stone-100"
+          >
+            Ver Imagens ({selectedItem.modalImages.length})
+          </Button>
+        )}
+      </div>
+    </div>
+  </div>
+)}
 
-      {/* Modal de imagem (estilo vitral medieval) */}
+      {/* Modal de carrossel */}
       {showImageModal && selectedItem && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
           <div className="bg-stone-800 border-4 border-amber-700 rounded-lg overflow-hidden shadow-2xl max-w-5xl w-full">
             <div className="bg-stone-900 border-b border-amber-800 p-3">
               <h3 className="text-xl font-pixel text-amber-300 text-center">
-                {selectedItem.label} - Imagens ou Videos Apresentados
+                {selectedItem.label} - Imagens ({currentImageIndex + 1}/{selectedItem.modalImages.length})
               </h3>
             </div>
             
-            <div className="p-4 bg-black flex justify-center max-h-[70vh] overflow-auto">
-              {selectedItem.modalImage ? (
-                <img 
-                  src={selectedItem.modalImage} 
-                  alt={selectedItem.label} 
-                  className="max-w-full object-contain"
+            <div className="relative p-4 bg-black flex justify-center items-center max-h-[70vh] overflow-auto">
+              <button 
+                onClick={prevImage}
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-stone-800/80 hover:bg-stone-700/90 text-amber-300 p-2 rounded-full z-10"
+              >
+                &lt;
+              </button>
+              
+              <img 
+                src={selectedItem.modalImages[currentImageIndex]} 
+                alt={`${selectedItem.label} - Imagem ${currentImageIndex + 1}`}
+                className="max-w-full max-h-[65vh] object-contain"
+              />
+              
+              <button 
+                onClick={nextImage}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-stone-800/80 hover:bg-stone-700/90 text-amber-300 p-2 rounded-full z-10"
+              >
+                &gt;
+              </button>
+            </div>
+            
+            <div className="bg-stone-900 border-t border-amber-800 p-3 flex justify-center space-x-2">
+              {selectedItem.modalImages.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentImageIndex(index)}
+                  className={`w-3 h-3 rounded-full ${currentImageIndex === index ? 'bg-amber-500' : 'bg-stone-600'}`}
+                  aria-label={`Ir para imagem ${index + 1}`}
                 />
-              ) : (
-                <div className="p-8 text-center text-amber-200 font-pixel">
-                  Sem preview disponível
-                </div>
-              )}
+              ))}
             </div>
             
             <div className="bg-stone-900 border-t border-amber-800 p-3 flex justify-center">

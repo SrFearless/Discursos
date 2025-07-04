@@ -46,6 +46,26 @@ export function NavBar() {
               >
                 <span>Voltar ao Portifólio</span>
               </Link>
+              <Link 
+                href="/presidencia" 
+                className={cn(
+                  "flex items-center gap-3 p-3 rounded-md font-pixel text-amber-200 hover:bg-amber-900/50",
+                  pathname === "/presidencia" && "bg-amber-900/30 border-l-4 border-amber-500"
+                )}
+                onClick={() => setIsOpen(false)}
+              >
+                <span>📜 Outras</span>
+              </Link>
+              <Link 
+                href="/" 
+                className={cn(
+                  "flex items-center gap-3 p-3 rounded-md font-pixel text-amber-200 hover:bg-amber-900/50",
+                  pathname === "/" && "bg-amber-900/30 border-l-4 border-amber-500"
+                )}
+                onClick={() => setIsOpen(false)}
+              >
+                <span>📜 Discursos</span>
+              </Link>
             </nav>
           </SheetContent>
         </Sheet>
@@ -59,6 +79,24 @@ export function NavBar() {
             )}
           >
             Voltar ao Portifólio
+          </Link>
+          <Link 
+            href="/presidencia" 
+            className={cn(
+              "font-pixel text-amber-300 hover:text-amber-200 px-3 py-1 rounded-md transition-colors",
+              pathname === "/presidencia" && "bg-amber-900/30 border-b-2 border-amber-500"
+            )}
+          >
+            📜 Outras
+          </Link>
+          <Link 
+            href="/" 
+            className={cn(
+              "font-pixel text-amber-300 hover:text-amber-200 px-3 py-1 rounded-md transition-colors",
+              pathname === "/" && "bg-amber-900/30 border-b-2 border-amber-500"
+            )}
+          >
+            📜 Discursos
           </Link>
         </nav>
       </div>
