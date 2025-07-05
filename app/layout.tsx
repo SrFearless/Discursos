@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Trabalhos",
+  title: "Designações",
   icons: {
     icon: "/icons/Marca.png",},
   description: "Veja meu melhores trabalhos",
