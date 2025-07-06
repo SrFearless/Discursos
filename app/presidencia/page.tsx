@@ -29,7 +29,7 @@ export default function AcademicWorks() {
   const actions: ActionItem[] = [
     {
         label: "Vazio",
-        modalTitle: "Indeterminado",
+        modalTitle: "Ilimitado",
         modalMessage:
           `...`,
         href: "",
@@ -158,7 +158,7 @@ export default function AcademicWorks() {
                   {/* Rodapé */}
                   <div className="mt-4 flex justify-between items-center">
                     <div className="bg-amber-700 text-amber-100 font-pixel text-xs px-2 py-1 rounded-full">
-                      {action.modalTitle.includes("Indeterminado") ? "Indeterminado" :
+                      {action.modalTitle.includes("Ilimitado") ? "Ilimitado" :
                        action.modalTitle.includes("7 Minutos") ? "7 Minutos" :
                        action.modalTitle.includes("15 Minutos") ? "15 Minutos" :
                        action.modalTitle.includes("30 Minutos") ? "30 Minutos" : "Vazio"}                   
@@ -202,7 +202,7 @@ export default function AcademicWorks() {
                   {/* Rodapé */}
                   <div className="mt-4 flex justify-between items-center">
                     <div className="bg-amber-700 text-amber-100 font-pixel text-xs px-2 py-1 rounded-full">
-                    {action.modalTitle.includes("Indeterminado") ? "Indeterminado" :
+                    {action.modalTitle.includes("Ilimitado") ? "Ilimitado" :
                        action.modalTitle.includes("7 Minutos") ? "7 Minutos" :
                        action.modalTitle.includes("15 Minutos") ? "15 Minutos" :
                        action.modalTitle.includes("30 Minutos") ? "30 Minutos" : "Vazio"}                    
@@ -246,7 +246,7 @@ export default function AcademicWorks() {
                   {/* Rodapé */}
                   <div className="mt-4 flex justify-between items-center">
                     <div className="bg-amber-700 text-amber-100 font-pixel text-xs px-2 py-1 rounded-full">
-                    {action.modalTitle.includes("Indeterminado") ? "Indeterminado" :
+                    {action.modalTitle.includes("Ilimitado") ? "Ilimitado" :
                        action.modalTitle.includes("7 Minutos") ? "7 Minutos" :
                        action.modalTitle.includes("15 Minutos") ? "15 Minutos" :
                        action.modalTitle.includes("30 Minutos") ? "30 Minutos" : "Vazio"}                   
@@ -290,7 +290,7 @@ export default function AcademicWorks() {
                   {/* Rodapé */}
                   <div className="mt-4 flex justify-between items-center">
                     <div className="bg-amber-700 text-amber-100 font-pixel text-xs px-2 py-1 rounded-full">
-                    {action.modalTitle.includes("Indeterminado") ? "Indeterminado" :
+                    {action.modalTitle.includes("Ilimitado") ? "Ilimitado" :
                        action.modalTitle.includes("7 Minutos") ? "7 Minutos" :
                        action.modalTitle.includes("15 Minutos") ? "15 Minutos" :
                        action.modalTitle.includes("30 Minutos") ? "30 Minutos" : "Vazio"}                    

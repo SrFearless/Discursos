@@ -259,7 +259,7 @@ Para Jeová, todas as pessoas são preciosas. E ele nos dá o privilégio de tra
 Sabemos que Jeová pode usar qualquer 1 de nós, mas assim como disse um irmão nosso na Bolívia chamado Andreas: "Para mim cada pessoa que se batiza é resultado de um trabalho em equipe" Então irmãos e amigos aqui presentes se tivermos esse mesmo ponto de vista positivo sobre nosso ministério, nós continuaremos uteis e a dar bons fruto para o reino de Jeová. `,
       href: "",
       modalImages: [
-        ""
+        "/images/semimagem.gif"
       ]
     },
     {
