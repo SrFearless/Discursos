@@ -40,10 +40,43 @@ export default function AcademicWorks() {
   ]
   const actions1: ActionItem[] = [
       {
-        label: "Vazio",
+        label: "Apresentação sobre as Guerras",
         modalTitle: "7 Minutos",
         modalMessage:
-          `...`,
+          `
+Bom dia a todos, parabens aos irmãos por apoiar a saída de campo. 
+
+Hoje para a nossa consideração, eu quero dar uma sugestão encima desse folheto com o tema: Quem Controla o Mundo? 
+
+Porque na atual situação do mundo está acontecendo muitas guerras, tivemos o episódio da Rússia e Ucrânia agora Israel e irã, e nós também vemos que muitas casas foram afetadas, pessoas acabaram perdendo a vida e muitas pessoas pode acabar se perguntando do porquê “Deus deixa tudo isso acontecer?” 
+
+Vamos ver um Texto que nós podemos apresentar ao morador? Que está logo abrindo o folheto: 1 João 5:19 quem pode ajudar na leitura? 
+
+(Sabemos que nos originamos de Deus, mas o mundo inteiro está no poder do Maligno.)
+
+Como podemos aplicar esses texto conversando com o Morador?
+
+Nós podemos pensar, será que se Deus estivesse governando o mundo ele estaria nessa situação? afinal sabemos que Jeová é um Deus de amor`,
+        href: "",
+        modalImages: [
+          "/images/semimagem.gif"
+        ]
+      },
+      {
+        label: "Apresentação sobre Ficar Pacífico",
+        modalTitle: "7 Minutos",
+        modalMessage:
+          `Bom dia a todos, parabens aos irmãos por apoiar a saída de campo. 
+
+Hoje para a nossa consideração eu quero começar lendo um texto, que é o de (Romanos 12:17-20) Quem poderia nos ajudar com a Leitura?
+
+17 - Não retribuam a ninguém mal com mal. Preocupem-se com o que é bom aos olhos de todas as pessoas. 18 - Se possível, no que depender de vocês, sejam pacíficos com todos. 19 - Não se vinguem, amados, mas deem lugar à ira; pois está escrito: “A vingança é minha; eu retribuirei, diz Jeová.” 20 - Mas, “se o seu inimigo estiver com fome, dê-lhe algo para comer; se ele estiver com sede, dê-lhe algo para beber; pois, fazendo isso, você amontoará brasas vivas sobre a cabeça dele”
+
+Como podemos aplicar esses textos conversando com o Morador?
+
+Podemos pensar como o exemplo de um ferreiro que precisa colocar o ferro em brasas ardentes para amolecer ele.
+
+E quando nós respondemos a Ira com Paz essa pessoa vai ficar pensando sobre isso, e como vemos ali no paragrafo 20 "amontoará brasas vivas sobre a cabeça dele"`,
         href: "",
         modalImages: [
           "/images/semimagem.gif"
