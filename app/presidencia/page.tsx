@@ -28,10 +28,68 @@ export default function AcademicWorks() {
 
   const actions: ActionItem[] = [
     {
-        label: "Vazio",
+        label: "Fim de Semana",
         modalTitle: "Ilimitado",
         modalMessage:
-          `...`,
+          `Convido os irmãos a se sentarem que dentro de 1 minuto começaremos a reunião. 
+_________________________________________________________________________________ 
+
+
+Sejam todos bem-vindos a mais uma reunião de fim de semana das testemunhas de jeová, gostaria de pedir para colocarem seus dispositivos eletrônicos no modo “silencioso” ou no “não perturbe” 
+
+ 
+
+É sempre um prazer e uma alegria ter todos aqui reunidos para nos encorajarmos e aproveitar as provisões que o nosso bom Deus nos dá. 
+
+ 
+
+Hoje teremos um discurso público e o estudo da revista “A Sentinela”. 
+
+ 
+
+E para começarmos eu convido os irmãos que podem se levantar, para entoarmos um cântico de louvor a Jeová. 
+
+ 
+
+Que é o de: 
+
+Número: 
+
+Tema: 
+
+Baseado no Texto: 
+
+
+
+Após a melodia todos cantemos. 
+_________________________________________________________________________________ 
+
+
+Muito bem, agora teremos um discurso público com o seguinte tema se desejarem anotar: 
+
+
+
+Tema: 
+
+Orador: 
+
+Congregação: 
+
+
+
+No qual passamos a Tribuna. 
+_________________________________________________________________________________ 
+
+
+Primeiramente gostaríamos de agradecer a Deus por essa provisão amorosa e ao nosso irmão () que treinou, se esforçou e se deslocou de sua congregação para nos proporcionar esse excelente discurso. 
+
+ 
+
+E Fica meu convite também para a próxima reunião de fim de semana que vai ter outro discurso, com outras instruções para nós. 
+
+ 
+
+Agora convido os irmãos para ficar mais 1 hora conosco onde iremos passar para o Estudo da “A Sentinela” no qual nosso irmão (Isaias) vai dirigir `,
         href: "",
         modalImages: [
           "/images/semimagem.gif"
