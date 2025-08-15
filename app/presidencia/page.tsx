@@ -143,10 +143,19 @@ E quando nós respondemos a Ira com Paz essa pessoa vai ficar pensando sobre iss
   ]
   const actions2: ActionItem[] = [
     {
-        label: "Vazio",
-        modalTitle: "15 Minutos",
+        label: "Jóias Espirituais",
+        modalTitle: "10 Minutos",
         modalMessage:
-          `...`,
+        `Bom, Então irmãos para começar as Jóias quem pode nos ajudar a ler o texto de (Texto da Semana)
+
+        Obrigado pela leitura, agora vamos a pergunta relacionada a esse texto (Pergunta da Semana)
+
+        Isso mesmo, a segunda pergunta é (Que joias espirituais você encontrou na leitura da Bíblia desta Semana?)
+
+        (Comentários)
+
+        Obrigado pelos excelentes comentários, agora prosseguimos a reunião com o Presidente
+`,
         href: "",
         modalImages: [
           "/images/semimagem.gif"
@@ -251,6 +260,7 @@ E quando nós respondemos a Ira com Paz essa pessoa vai ficar pensando sobre iss
                     <div className="bg-amber-700 text-amber-100 font-pixel text-xs px-2 py-1 rounded-full">
                       {action.modalTitle.includes("Ilimitado") ? "Ilimitado" :
                        action.modalTitle.includes("7 Minutos") ? "7 Minutos" :
+                       action.modalTitle.includes("10 Minutos") ? "10 Minutos" :
                        action.modalTitle.includes("15 Minutos") ? "15 Minutos" :
                        action.modalTitle.includes("30 Minutos") ? "30 Minutos" : "Vazio"}                   
                     </div>
@@ -295,6 +305,7 @@ E quando nós respondemos a Ira com Paz essa pessoa vai ficar pensando sobre iss
                     <div className="bg-amber-700 text-amber-100 font-pixel text-xs px-2 py-1 rounded-full">
                     {action.modalTitle.includes("Ilimitado") ? "Ilimitado" :
                        action.modalTitle.includes("7 Minutos") ? "7 Minutos" :
+                       action.modalTitle.includes("10 Minutos") ? "10 Minutos" :
                        action.modalTitle.includes("15 Minutos") ? "15 Minutos" :
                        action.modalTitle.includes("30 Minutos") ? "30 Minutos" : "Vazio"}                    
                     </div>
@@ -339,6 +350,7 @@ E quando nós respondemos a Ira com Paz essa pessoa vai ficar pensando sobre iss
                     <div className="bg-amber-700 text-amber-100 font-pixel text-xs px-2 py-1 rounded-full">
                     {action.modalTitle.includes("Ilimitado") ? "Ilimitado" :
                        action.modalTitle.includes("7 Minutos") ? "7 Minutos" :
+                       action.modalTitle.includes("10 Minutos") ? "10 Minutos" :
                        action.modalTitle.includes("15 Minutos") ? "15 Minutos" :
                        action.modalTitle.includes("30 Minutos") ? "30 Minutos" : "Vazio"}                   
                     </div>
@@ -383,6 +395,7 @@ E quando nós respondemos a Ira com Paz essa pessoa vai ficar pensando sobre iss
                     <div className="bg-amber-700 text-amber-100 font-pixel text-xs px-2 py-1 rounded-full">
                     {action.modalTitle.includes("Ilimitado") ? "Ilimitado" :
                        action.modalTitle.includes("7 Minutos") ? "7 Minutos" :
+                       action.modalTitle.includes("10 Minutos") ? "10 Minutos" :
                        action.modalTitle.includes("15 Minutos") ? "15 Minutos" :
                        action.modalTitle.includes("30 Minutos") ? "30 Minutos" : "Vazio"}                    
                     </div>
