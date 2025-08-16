@@ -32,7 +32,7 @@ export default function AcademicWorks() {
         modalTitle: "Ilimitado",
         modalMessage:
           `Convido os irmãos a se sentarem que dentro de 1 minuto começaremos a reunião. 
-_________________________________________________________________________________ 
+_____________________________ 
 
 
 Sejam todos bem-vindos a mais uma reunião de fim de semana das testemunhas de jeová, gostaria de pedir para colocarem seus dispositivos eletrônicos no modo “silencioso” ou no “não perturbe” 
@@ -62,7 +62,7 @@ Baseado no Texto:
 
 
 Após a melodia todos cantemos. 
-_________________________________________________________________________________ 
+_____________________________ 
 
 
 Muito bem, agora teremos um discurso público com o seguinte tema se desejarem anotar: 
@@ -78,7 +78,7 @@ Congregação:
 
 
 No qual passamos a Tribuna. 
-_________________________________________________________________________________ 
+_____________________________
 
 
 Primeiramente gostaríamos de agradecer a Deus por essa provisão amorosa e ao nosso irmão () que treinou, se esforçou e se deslocou de sua congregação para nos proporcionar esse excelente discurso. 
