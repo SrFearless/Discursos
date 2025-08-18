@@ -28,113 +28,22 @@ export default function AcademicWorks() {
 
   const actions: ActionItem[] = [
     {
-        label: "Fim de Semana",
-        modalTitle: "Ilimitado",
-        modalMessage:
-          `Convido os irmãos a se sentarem que dentro de 1 minuto começaremos a reunião. 
-_____________________________
-
-
-Sejam todos bem-vindos a mais uma reunião de fim de semana das testemunhas de jeová, gostaria de pedir para colocarem seus dispositivos eletrônicos no modo “silencioso” ou no “não perturbe” 
-
- 
-
-É sempre um prazer e uma alegria ter todos aqui reunidos para nos encorajarmos e aproveitar as provisões que o nosso bom Deus nos dá. 
-
- 
-
-Hoje teremos um discurso público e o estudo da revista “A Sentinela”. 
-
- 
-
-E para começarmos eu convido os irmãos que podem se levantar, para entoarmos um cântico de louvor a Jeová. 
-
- 
-
-Que é o de: 
-
-Número: 
-
-Tema: 
-
-Baseado no Texto: 
-
-
-
-Após a melodia todos cantemos. 
-_____________________________ 
-
-
-Muito bem, agora teremos um discurso público com o seguinte tema se desejarem anotar: 
-
-
-
-Tema: 
-
-Orador: 
-
-Congregação: 
-
-
-
-No qual passamos a Tribuna. 
-_____________________________
-
-
-Primeiramente gostaríamos de agradecer a Deus por essa provisão amorosa e ao nosso irmão () que treinou, se esforçou e se deslocou de sua congregação para nos proporcionar esse excelente discurso. 
-
- 
-
-E Fica meu convite também para a próxima reunião de fim de semana que vai ter outro discurso, com outras instruções para nós. 
-
- 
-
-Agora convido os irmãos para ficar mais 1 hora conosco onde iremos passar para o Estudo da “A Sentinela” no qual nosso irmão (Isaias) vai dirigir `,
-        href: "",
-        modalImages: [
-          "/images/semimagem.gif"
-        ]
-      },
+      label: "Salmos 83:18",
+      modalTitle: "Ilimitado",
+      modalMessage:
+        `18- Que as pessoas saibam que tu, cujo nome é Jeová, Somente tu és o Altíssimo sobre toda a terra.`,
+      href: "",
+      modalImages: [
+        "/images/semimagem.gif"
+      ]
+    },
   ]
   const actions1: ActionItem[] = [
       {
-        label: "Apresentação sobre as Guerras",
-        modalTitle: "7 Minutos",
+        label: "Vazio",
+        modalTitle: "Ilimitado",
         modalMessage:
-          `
-Bom dia a todos, parabens aos irmãos por apoiar a saída de campo. 
-
-Hoje para a nossa consideração, eu quero dar uma sugestão encima desse folheto com o tema: Quem Controla o Mundo? 
-
-Porque na atual situação do mundo está acontecendo muitas guerras, tivemos o episódio da Rússia e Ucrânia agora Israel e irã, e nós também vemos que muitas casas foram afetadas, pessoas acabaram perdendo a vida e muitas pessoas pode acabar se perguntando do porquê “Deus deixa tudo isso acontecer?” 
-
-Vamos ver um Texto que nós podemos apresentar ao morador? Que está logo abrindo o folheto: 1 João 5:19 quem pode ajudar na leitura? 
-
-(Sabemos que nos originamos de Deus, mas o mundo inteiro está no poder do Maligno.)
-
-Como podemos aplicar esses texto conversando com o Morador?
-
-Nós podemos pensar, será que se Deus estivesse governando o mundo ele estaria nessa situação? afinal sabemos que Jeová é um Deus de amor`,
-        href: "",
-        modalImages: [
-          "/images/semimagem.gif"
-        ]
-      },
-      {
-        label: "Apresentação sobre Ficar Pacífico",
-        modalTitle: "7 Minutos",
-        modalMessage:
-          `Bom dia a todos, parabens aos irmãos por apoiar a saída de campo. 
-
-Hoje para a nossa consideração eu quero começar lendo um texto, que é o de (Romanos 12:17-20) Quem poderia nos ajudar com a Leitura?
-
-17 - Não retribuam a ninguém mal com mal. Preocupem-se com o que é bom aos olhos de todas as pessoas. 18 - Se possível, no que depender de vocês, sejam pacíficos com todos. 19 - Não se vinguem, amados, mas deem lugar à ira; pois está escrito: “A vingança é minha; eu retribuirei, diz Jeová.” 20 - Mas, “se o seu inimigo estiver com fome, dê-lhe algo para comer; se ele estiver com sede, dê-lhe algo para beber; pois, fazendo isso, você amontoará brasas vivas sobre a cabeça dele”
-
-Como podemos aplicar esses textos conversando com o Morador?
-
-Podemos pensar como o exemplo de um ferreiro que precisa colocar o ferro em brasas ardentes para amolecer ele.
-
-E quando nós respondemos a Ira com Paz essa pessoa vai ficar pensando sobre isso, e como vemos ali no paragrafo 20 "amontoará brasas vivas sobre a cabeça dele"`,
+          `...`,
         href: "",
         modalImages: [
           "/images/semimagem.gif"
@@ -143,31 +52,27 @@ E quando nós respondemos a Ira com Paz essa pessoa vai ficar pensando sobre iss
   ]
   const actions2: ActionItem[] = [
     {
-        label: "Jóias Espirituais",
-        modalTitle: "10 Minutos",
-        modalMessage:
-        `Bom, Então irmãos para começar as Jóias quem pode nos ajudar a ler o texto de (Texto da Semana)
-
-        Obrigado pela leitura, agora vamos a pergunta relacionada a esse texto (Pergunta da Semana)
-
-        Isso mesmo, a segunda pergunta é (Que joias espirituais você encontrou na leitura da Bíblia desta Semana?)
-
-        (Comentários)
-
-        Obrigado pelos excelentes comentários, agora prosseguimos a reunião com o Presidente
-`,
-        href: "",
-        modalImages: [
-          "/images/semimagem.gif"
-        ]
-      },
+      label: "Vazio",
+      modalTitle: "Ilimitado",
+      modalMessage:
+        `...`,
+      href: "",
+      modalImages: [
+        "/images/semimagem.gif"
+      ]
+    },
   ]
   const actions3: ActionItem[] = [
     {
-        label: "Vazio",
-        modalTitle: "15 Minutos",
+        label: "Colossenses 3:17, 22-25",
+        modalTitle: "Ilimitado",
         modalMessage:
-          `...`,
+          `
+          17- O que for que fizerem, em palavras ou em ações, façam tudo em nome do Senhor Jesus, agradecendo a Deus, o Pai, por meio dele. 
+          22- Escravos, em tudo sejam obedientes aos seus senhores humanos, não apenas quando estiverem sendo observados, só para agradar a homens, mas com sinceridade de coração, com temor a Jeová. 
+          23- O que for que fizerem, trabalhem nisso de toda a alma, como para Jeová, e não para homens, 
+          24- pois vocês sabem que é de Jeová que receberão a herança como recompensa. Trabalhem como escravos para o Senhor, Cristo. 
+          25- Certamente, quem faz o que é errado terá a retribuição pelo que fez de errado, e não há parcialidade.`,
         href: "",
         modalImages: [
           "/images/semimagem.gif"
@@ -229,7 +134,7 @@ E quando nós respondemos a Ira com Paz essa pessoa vai ficar pensando sobre iss
       {/* Lista de trabalhos em uma única coluna */}
       <div className="container mx-auto px-4 py-12 max-w-3xl">
       <div className="px-4 py-12 font-pixel text-purple-500 border-l-2 border-amber-500 text-[25px]">
-            Presidencia
+            Qual o nome de Jeová
         </div>
         <div className="space-y-8">
           {actions.map((action, idx) => (
@@ -274,7 +179,7 @@ E quando nós respondemos a Ira com Paz essa pessoa vai ficar pensando sobre iss
           ))}
         </div>
         <div className="px-4 py-12 font-pixel text-purple-500 border-l-2 border-amber-500 text-[25px]">
-            Saida de Campo
+            Porquê não aceitamos Sangue
         </div>
         <div className="space-y-8">
           {actions1.map((action, idx) => (
@@ -319,7 +224,7 @@ E quando nós respondemos a Ira com Paz essa pessoa vai ficar pensando sobre iss
           ))}
         </div>
         <div className="px-4 py-12 font-pixel text-purple-500 border-l-2 border-amber-500 text-[25px]">
-            Jóias
+            Aniversário
         </div>
         <div className="space-y-8">
           {actions2.map((action, idx) => (
@@ -364,7 +269,7 @@ E quando nós respondemos a Ira com Paz essa pessoa vai ficar pensando sobre iss
           ))}
         </div>
         <div className="px-4 py-12 font-pixel text-purple-500 border-l-2 border-amber-500 text-[25px]">
-            Necessidades Locais
+            Dê o seu Melhor
         </div>
         <div className="space-y-8">
           {actions3.map((action, idx) => (
