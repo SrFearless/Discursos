@@ -124,10 +124,10 @@ export default function AcademicWorks() {
       {/* Banner superior */}
       <div className="bg-black/70 border-b-4 border-amber-800 py-4 shadow-lg">
         <h1 className="text-3xl md:text-4xl font-pixel text-center text-amber-400 tracking-wider">
-          📜 Designações
+          📜 Textos Biblicos
         </h1>
         <p className="text-center text-amber-200 mt-2 font-pixel text-sm">
-          Partes como Saída de Campo, Tesouros da Palavra de Deus, Faça seu Melhor no Ministério e Nossa Vida Cristã
+          Se esqueceu de algum texto na hora de Explicar a sua crença? Então ache-o aqui
         </p>
       </div>
 
