@@ -40,10 +40,56 @@ export default function AcademicWorks() {
   ]
   const actions1: ActionItem[] = [
       {
-        label: "Vazio",
+        label: "Gênesis 9:4",
         modalTitle: "Ilimitado",
         modalMessage:
-          `...`,
+          `
+          4- Somente não comam a carne de um animal com seu sangue, que é a sua vida.`,
+        href: "",
+        modalImages: [
+          "/images/semimagem.gif"
+        ]
+      },
+      {
+        label: "Deuteronômio 12:23",
+        modalTitle: "Ilimitado",
+        modalMessage:
+          `
+          23- Apenas esteja firmemente decidido a não comer o sangue,a porque o sangue é a vida; não coma a vida junto com a carne.`,
+        href: "",
+        modalImages: [
+          "/images/semimagem.gif"
+        ]
+      },
+      {
+        label: "Levítico 17:10",
+        modalTitle: "Ilimitado",
+        modalMessage:
+          `
+          10- “Se algum homem da casa de Israel ou algum estrangeiro que mora entre vocês comer o sanguea de qualquer criatura, eu certamente me voltarei contra aquele que comer o sangue, e o eliminarei dentre seu povo."`,
+        href: "",
+        modalImages: [
+          "/images/semimagem.gif"
+        ]
+      },
+      {
+        label: "Levítico 17:14",
+        modalTitle: "Ilimitado",
+        modalMessage:
+          `
+          14- Pois a vida de todo tipo de criatura é seu sangue, porque a vida está no sangue. Por isso eu disse aos israelitas: “Não comam o sangue de nenhuma criatura, porque a vida de todas as criaturas é seu sangue. Quem o comer será eliminado.”`,
+        href: "",
+        modalImages: [
+          "/images/semimagem.gif"
+        ]
+      },
+      {
+        label: "Atos 15:28, 29",
+        modalTitle: "Ilimitado",
+        modalMessage:
+          `
+          28- Pois pareceu bem ao espírito santo e a nós não impor a vocês nenhum fardo além destas coisas necessárias: 
+          29- que persistam em se abster de coisas sacrificadas a ídolos, de sangue, do que foi estrangulado e de imoralidade sexual. Se vocês se guardarem cuidadosamente dessas coisas, tudo irá bem com vocês. Saudações!”`,
         href: "",
         modalImages: [
           "/images/semimagem.gif"
@@ -52,10 +98,35 @@ export default function AcademicWorks() {
   ]
   const actions2: ActionItem[] = [
     {
-      label: "Vazio",
+      label: "Deuteronômio 18:14",
       modalTitle: "Ilimitado",
       modalMessage:
-        `...`,
+        `
+        14- “Pois estas nações que você vai expulsar escutam os que praticam magia e adivinhação, mas Jeová, seu Deus, não lhe permitiu fazer nada disso.`,
+      href: "",
+      modalImages: [
+        "/images/semimagem.gif"
+      ]
+    },
+    {
+      label: "Gálatas 5:19-21",
+      modalTitle: "Ilimitado",
+      modalMessage:
+        `
+        19- As obras da carne são claramente vistas. Elas são: imoralidade sexual, impureza, conduta insolente,
+        20- idolatria, ocultismo, inimizades, brigas, ciúme, acessos de ira, discórdias, divisões, formação de seitas,
+        21- inveja, embriaguez, festas descontroladas e coisas como essas. Eu estou advertindo vocês a respeito dessas coisas, do mesmo modo como já os adverti: os que praticam tais coisas não herdarão o Reino de Deus.`,
+      href: "",
+      modalImages: [
+        "/images/semimagem.gif"
+      ]
+    },
+    {
+      label: "Eclesiastes 7:1",
+      modalTitle: "Ilimitado",
+      modalMessage:
+        `
+        7- Um bom nome é melhor do que um bom óleo, e o dia da morte é melhor do que o dia do nascimento.`,
       href: "",
       modalImages: [
         "/images/semimagem.gif"
@@ -79,9 +150,32 @@ export default function AcademicWorks() {
         ]
       },
   ]
-
-
-
+  const actions4: ActionItem[] = [
+    {
+        label: "Eclesiastes 11:9-10",
+        modalTitle: "Ilimitado",
+        modalMessage:
+          `
+          9- Alegre-se, jovem, enquanto você ainda é jovem, e que o seu coração seja feliz nos dias da sua juventude. Siga os caminhos do seu coração e vá para onde seus olhos o levarem; mas saiba que o verdadeiro Deus o levará a julgamento por todas essas coisas.
+          10- Portanto, tire do seu coração as preocupações e afaste do seu corpo coisas prejudiciais, pois a juventude e a flor da vida são vaidade.
+`,
+        href: "",
+        modalImages: [
+          "/images/semimagem.gif"
+        ]
+      },
+      {
+        label: "Provérbios 19:14",
+        modalTitle: "Ilimitado",
+        modalMessage:
+          `
+          14- Casa e riquezas são herdadas dos pais, Mas a esposa prudente vem de Jeová.`,
+        href: "",
+        modalImages: [
+          "/images/semimagem.gif"
+        ]
+      },
+  ]
 
   function handleOpen(item: ActionItem) {
     setSelectedItem(item)
@@ -134,7 +228,7 @@ export default function AcademicWorks() {
       {/* Lista de trabalhos em uma única coluna */}
       <div className="container mx-auto px-4 py-12 max-w-3xl">
       <div className="px-4 py-12 font-pixel text-purple-500 border-l-2 border-amber-500 text-[25px]">
-            Qual o nome de Jeová
+            Qual o nome de Jeová?
         </div>
         <div className="space-y-8">
           {actions.map((action, idx) => (
@@ -179,7 +273,7 @@ export default function AcademicWorks() {
           ))}
         </div>
         <div className="px-4 py-12 font-pixel text-purple-500 border-l-2 border-amber-500 text-[25px]">
-            Porquê não aceitamos Sangue
+            Porquê não aceitamos Sangue?
         </div>
         <div className="space-y-8">
           {actions1.map((action, idx) => (
@@ -273,6 +367,51 @@ export default function AcademicWorks() {
         </div>
         <div className="space-y-8">
           {actions3.map((action, idx) => (
+            <div
+              key={action.label + idx}
+              className="relative group transform hover:scale-[1.02] transition-transform duration-300 cursor-pointer"
+              onClick={() => handleOpen(action)}
+            >
+              {/* Moldura decorativa */}
+              <div className="absolute inset-0 border-4 border-amber-700 rounded-lg pointer-events-none"></div>
+              <div className="absolute inset-1 border-2 border-amber-500/50 rounded pointer-events-none"></div>
+              
+              {/* Carta de trabalho */}
+              <div className="relative w-full min-h-32 rounded bg-stone-800 overflow-hidden shadow-lg p-6">
+                {/* Conteúdo */}
+                <div className="flex flex-col h-full">
+                  <div className="flex-grow">
+                    <h3 className="text-xl font-pixel text-amber-200">
+                      {action.label}
+                    </h3>
+                    <p className="text-amber-100 mt-2 text-sm line-clamp-3">
+                      {action.modalMessage.substring(0, 150)}...
+                    </p>
+                  </div>
+                  
+                  {/* Rodapé */}
+                  <div className="mt-4 flex justify-between items-center">
+                    <div className="bg-amber-700 text-amber-100 font-pixel text-xs px-2 py-1 rounded-full">
+                    {action.modalTitle.includes("Ilimitado") ? "Ilimitado" :
+                       action.modalTitle.includes("7 Minutos") ? "7 Minutos" :
+                       action.modalTitle.includes("10 Minutos") ? "10 Minutos" :
+                       action.modalTitle.includes("15 Minutos") ? "15 Minutos" :
+                       action.modalTitle.includes("30 Minutos") ? "30 Minutos" : "Vazio"}                    
+                    </div>
+                    <span className="text-amber-300 text-sm font-pixel">
+                      Clique para ver detalhes
+                    </span>
+                  </div>
+                </div>
+              </div>
+              </div>
+          ))}
+        </div>
+        <div className="px-4 py-12 font-pixel text-purple-500 border-l-2 border-amber-500 text-[25px]">
+            Espere por uma Esposa
+        </div>
+        <div className="space-y-8">
+          {actions4.map((action, idx) => (
             <div
               key={action.label + idx}
               className="relative group transform hover:scale-[1.02] transition-transform duration-300 cursor-pointer"
