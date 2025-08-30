@@ -35,7 +35,7 @@ export default function AcademicWorks() {
 _____________________________
 
 
-Sejam todos bem-vindos a mais uma reunião de fim de semana das testemunhas de jeová, gostaria de pedir para colocarem seus dispositivos eletrônicos no modo “silencioso” ou no “não perturbe” 
+Sejam todos bem-vindos a mais uma reunião de fim de semana das testemunhas de jeová, e gostaria de pedir para colocarem seus dispositivos eletrônicos no modo “silencioso” ou no “não perturbe” 
 
  
 
@@ -47,17 +47,17 @@ Hoje teremos um discurso público e o estudo da revista “A Sentinela”.
 
  
 
-E para começarmos eu convido os irmãos que podem se levantar, para entoarmos um cântico de louvor a Jeová. 
+E para começarmos eu convido os irmãos que poderem se levantar, para entoarmos um cântico de louvor a Jeová. 
 
  
 
 Que é o de: 
 
-Número: 
+Número: (28)
 
-Tema: 
+Tema: (Quem pode ser amigo de Jeová?)
 
-Baseado no Texto: 
+Baseado no Texto: (Salmo 15)
 
 
 
@@ -69,11 +69,11 @@ Muito bem, agora teremos um discurso público com o seguinte tema se desejarem a
 
 
 
-Tema: 
+Tema: (Você conhece bem a Deus?)
 
-Orador: 
+Orador: (Cleber Sales Vieira)
 
-Congregação: 
+Congregação: (Jardim Suzuki)
 
 
 
@@ -81,7 +81,11 @@ No qual passamos a Tribuna.
 _____________________________
 
 
-Primeiramente gostaríamos de agradecer a Deus por essa provisão amorosa e ao nosso irmão () que treinou, se esforçou e se deslocou de sua congregação para nos proporcionar esse excelente discurso. 
+Vimos que precisamos conhecer a fundo as ações e as qualidades de Jeová, e agir de acordo com esse conhecimento.
+
+
+
+Primeiramente gostaríamos de agradecer a Jeová por essa provisão amorosa e ao nosso irmão (Cleber Sales) que treinou, se esforçou e se deslocou de sua congregação para nos proporcionar esse excelente discurso.
 
  
 
@@ -89,7 +93,7 @@ E Fica meu convite também para a próxima reunião de fim de semana que vai ter
 
  
 
-Agora convido os irmãos para ficar mais 1 hora conosco onde iremos passar para o Estudo da “A Sentinela” no qual nosso irmão (Isaias) vai dirigir `,
+Agora irmãos nós iremos passar para o Estudo da “A Sentinela” no qual nosso irmão (Isaias) vai dirigir essa parte.`,
         href: "",
         modalImages: [
           "/images/semimagem.gif"
