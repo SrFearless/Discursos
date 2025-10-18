@@ -177,6 +177,49 @@ export default function AcademicWorks() {
       },
   ]
 
+  const actions5: ActionItem[] = [
+    {
+        label: "Salmo 115:14-16",
+        modalTitle: "Ilimitado",
+        modalMessage:
+          `
+        14- Jeová fará que vocês se tornem muitos, Vocês e os seus filhos.
+        15- Que vocês sejam abençoados por Jeová, Aquele que fez o céu e a terra.
+        16- Quanto aos céus, eles pertencem a Jeová, Mas a terra ele deu aos filhos dos homens.
+`,
+        href: "",
+        modalImages: [
+          "/images/semimagem.gif"
+        ]
+      },
+      {
+        label: "Eclesiastes 9:5",
+        modalTitle: "Ilimitado",
+        modalMessage:
+          `
+          5- Pois os vivos sabem que morrerão, mas os mortos não sabem absolutamente nada, nem têm mais recompensa, porque toda lembrança deles caiu no esquecimento.`,
+        href: "",
+        modalImages: [
+          "/images/semimagem.gif"
+        ]
+      },
+      {
+        label: "João 5:25-29",
+        modalTitle: "Ilimitado",
+        modalMessage:
+          `
+          25- “Digo-lhes com toda a certeza: Vem a hora, e agora é, em que os mortos ouvirão a voz do Filho de Deus, e os que tiverem dado atenção viverão.
+          26- Pois assim como o Pai tem vida em si mesmo, assim concedeu também ao Filho ter vida em si mesmo.
+          27- E deu a ele autoridade para julgar, porque ele é o Filho do Homem.
+          28- Não fiquem admirados com isso, pois vem a hora em que todos os que estão nos túmulos memoriais ouvirão a voz dele
+          29- e sairão: os que fizeram coisas boas, para uma ressurreição de vida; e os que praticaram coisas ruins, para uma ressurreição de julgamento.`,
+        href: "",
+        modalImages: [
+          "/images/semimagem.gif"
+        ]
+      },
+    ]
+
   function handleOpen(item: ActionItem) {
     setSelectedItem(item)
     setShowConfirmModal(true)
@@ -412,6 +455,51 @@ export default function AcademicWorks() {
         </div>
         <div className="space-y-8">
           {actions4.map((action, idx) => (
+            <div
+              key={action.label + idx}
+              className="relative group transform hover:scale-[1.02] transition-transform duration-300 cursor-pointer"
+              onClick={() => handleOpen(action)}
+            >
+              {/* Moldura decorativa */}
+              <div className="absolute inset-0 border-4 border-amber-700 rounded-lg pointer-events-none"></div>
+              <div className="absolute inset-1 border-2 border-amber-500/50 rounded pointer-events-none"></div>
+              
+              {/* Carta de trabalho */}
+              <div className="relative w-full min-h-32 rounded bg-stone-800 overflow-hidden shadow-lg p-6">
+                {/* Conteúdo */}
+                <div className="flex flex-col h-full">
+                  <div className="flex-grow">
+                    <h3 className="text-xl font-pixel text-amber-200">
+                      {action.label}
+                    </h3>
+                    <p className="text-amber-100 mt-2 text-sm line-clamp-3">
+                      {action.modalMessage.substring(0, 150)}...
+                    </p>
+                  </div>
+                  
+                  {/* Rodapé */}
+                  <div className="mt-4 flex justify-between items-center">
+                    <div className="bg-amber-700 text-amber-100 font-pixel text-xs px-2 py-1 rounded-full">
+                    {action.modalTitle.includes("Ilimitado") ? "Ilimitado" :
+                       action.modalTitle.includes("7 Minutos") ? "7 Minutos" :
+                       action.modalTitle.includes("10 Minutos") ? "10 Minutos" :
+                       action.modalTitle.includes("15 Minutos") ? "15 Minutos" :
+                       action.modalTitle.includes("30 Minutos") ? "30 Minutos" : "Vazio"}                    
+                    </div>
+                    <span className="text-amber-300 text-sm font-pixel">
+                      Clique para ver detalhes
+                    </span>
+                  </div>
+                </div>
+              </div>
+              </div>
+          ))}
+                  </div>
+        <div className="px-4 py-12 font-pixel text-purple-500 border-l-2 border-amber-500 text-[25px]">
+            Paraíso aqui na Terra
+        </div>
+        <div className="space-y-8">
+          {actions5.map((action, idx) => (
             <div
               key={action.label + idx}
               className="relative group transform hover:scale-[1.02] transition-transform duration-300 cursor-pointer"
