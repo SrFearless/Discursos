@@ -263,13 +263,89 @@ Sabemos que Jeová pode usar qualquer 1 de nós, mas assim como disse um irmão 
       ]
     },
     {
-      label: "Vazio",
-      modalTitle: "Esperando...",
+      label: "Encare seus problemas da maneira correta",
+      modalTitle: "10 Minutos",
       modalMessage:
-        `...`,
+        `Os irmãos já voltaram do serviço ou de alguma atividade em que voltou cansado ou esgotado? 
+
+As vezes pode ser difícil lidar com nossa rotina quando enfrentamos problemas nosso dia a dia. 
+
+Infelizmente é algo que todos nós estamos sujeitos a passar, mas felizmente Jeová é um pai tão amoroso que não nos deixa sozinhos, ele nos ajuda a ver de forma correta a como passar por esses problemas. 
+
+E ele faz isso pelas orientações que ele deixou escrito aqui na bíblia, então vamos considerar algumas coisas que ele nos diz que ajuda bastante nós nos dias de hoje. 
+
+Vamos ver o que diz em (Gálatas 6:7) 
+
+Algo que devemos meditar é o seguinte, será que alguns desses problemas não são nossa culpa? Se for o caso, temos que reconhecer isso não é mesmo? 
+
+Vamos imaginar a seguinte ilustração: Vamos dizer que tenhamos um carro esportivo que tenha condições de andar em alta velocidade. Mas nós como motorista tomamos a decisão de ultrapassar muito o limite de velocidade em uma curva fechada e acabamos nos acidentando. 
+
+Será que deveríamos culpar o fabricante do carro pelo acidente? É claro que não! De maneira similar, Jeová nos criou com a capacidade de livre escolha. Mas também nos proveu as orientações sobre como tomar sábias decisões.  
+
+Perceberam irmãos como vimos no texto? Nós vamos colher oque semear, então por que culparíamos nosso Criador pelos nossos erros? 
+
+Naturalmente, nem todos os nossos problemas resultam de erros pessoais e ações erradas. Algumas coisas acontecem como resultado ‘do tempo e do imprevisto’. 
+
+Afinal nunca percamos de vista o fato de que Satanás, o Diabo, é a causa primária da perversidade, então pode ser que alguns problemas da nossa vida não tenha um motivo específico, simplesmente acontece porque o “tempo e o imprevisto” existem. 
+
+ Mas não significa que perdemos a aprovação de Jeová quando estamos passando por essas dificuldades. 
+
+Um texto no qual podemos refletir é o de 
+
+(Eclesiastes 9:11 que eu convido os irmãos a acompanhar)  
+
+Como vimos nesse texto as vezes pessoas com muita habilidade nem sempre vão receber o reconhecimento que merecem. Já pelo contrário às vezes pessoas com menos habilidades recebem mais honra. 
+
+Dito isso Jeová quer que nós desenvolvamos algumas qualidades que nos ajude, vamos ver uma em específico 
+
+ (Eclesiastes agora o 10:7) 
+
+O Sábio rei Salomão viu uma situação em que parece que ouve uma inversão de valores, para quem observava não parecia correto nem justo 
+
+Ta bom, mas o que esse exemplo tem a ver conosco? Talvez também vamos nos deparar com situações como esta onde não se parece certo. 
+
+Mas situações injustas infelizmente é comum nos dias de hoje afinal o mundo é de satanás, mas o que fazer então? É por isso que Jeová quer que desenvolvamos a qualidade da “humildade”. 
+
+Salomão reconheceu que o melhor que podemos fazer é aceitar a realidade, muitas vezes nós não podemos fazer nada em relação a uma injustiça. se formos humildes, será mais fácil aceitar a vida assim como ela é — e não como achamos que ela deveria ser. 
+
+É claro que isso não quer dizer que vamos ficar insensíveis ou que não vamos mais ter sentimentos pela maldade e crueldade do mundo, mas Jeová não quer que fiquemos focados nessas situações ruins, nós sabemos que elas acontecem e que podem acontecer. 
+
+Jeová não quer que fiquemos prestando atenção demais nestas coisas, porque se ficamos só observando o que há de mal no mundo, podemos acabar perdendo a alegria e assim passando por mais sofrimento além do necessário. 
+
+Então o que podemos fazer? Se estamos rodeados de dor e sofrimento? nós podemos focar no que é bom apesar de todas essas dificuldades, A BÍBLIA inteira irmãos há declarações indicando que Jeová não deseja apenas que vivamos, mas também que tenhamos prazer na vida. 
+
+(como está descrito aqui em Eclesiastes 9:7, 10) 
+
+Jeová mostra que “podemos” e “devemos” fazer aquilo que nos traz felicidade, é claro que como cristãos nós sabemos escolher lazeres sadios. 
+
+E não é errado fazer isso, afinal Jeová fala no versículo 7 que façamos isso com alegria e no versículo 10 fazer com toda a nossa força, portanto devemos deixar de lado as coisas ruins e pensar nas coisas boas que Jeová nos dá, não há motivo para nos sentir culpados se de vez em quando programamos atividades que nos revigoram, e enriquecem a nossa vida.  
+
+Oque os irmãos gostam de fazer? 
+
+Se servir de uma comida que você goste. 
+
+Talvez alguma atividade 
+
+Como passear. 
+
+Admirar a natureza. 
+
+Ou a beleza que Jeová deixou na terra. 
+
+Talvez um entretenimento que te fez ficar alegre? 
+
+Cantar, dançar, ler 
+
+Jeová quer que você se divirta também, é claro desde que seja de acordo com sua vontade. 
+
+(Vamos ver uma imagem que mostra um exemplo de uma irmã fazendo o que ela gosta?) 
+
+Uma vida plena e prazerosa é uma “dádiva de Deus”. Considerar o lazer como parte dessa dádiva nos moverá a usar de um modo que agrade àquele que nos deu essa dádiva. 
+
+Então irmão vamos encarar os problemas com as orientações de Jeová, continuarmos humildes e focar nas dádivas que Deus nos dá e não nos problemas que enfrentamos nesse mundo. `,
       href: "",
       modalImages: [
-      "/images/semimagem.gif"
+      "/images/1.jpg"
       ]
     }, 
   ]
