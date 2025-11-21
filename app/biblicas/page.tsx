@@ -149,6 +149,30 @@ export default function AcademicWorks() {
           "/images/semimagem.gif"
         ]
       },
+      {
+        label: "Salmos 104:14,15",
+        modalTitle: "Ilimitado",
+        modalMessage:
+          `
+14- Ele faz crescer relva para o gado E plantas para o uso da humanidade, Para tirar da terra alimento:
+
+15- O vinho, que alegra o coração do homem; O azeite, que faz o rosto brilhar; E o pão, que revigora o coração do homem.`,
+        href: "",
+        modalImages: [
+          "/images/semimagem.gif"
+        ]
+      },
+      {
+        label: "Eclesiastes 9:10",
+        modalTitle: "Ilimitado",
+        modalMessage:
+          `
+10- Tudo o que a sua mão achar para fazer, faça-o com toda a sua força, pois não há trabalho, nem planejamento, nem conhecimento, nem sabedoria na Sepultura,ao o lugar para onde você vai.`,
+        href: "",
+        modalImages: [
+          "/images/semimagem.gif"
+        ]
+      },
   ]
   const actions4: ActionItem[] = [
     {
@@ -218,7 +242,26 @@ export default function AcademicWorks() {
           "/images/semimagem.gif"
         ]
       },
+      
     ]
+    const actions6: ActionItem[] = [
+      {
+          label: "Eclesiastes 9:2-6",
+          modalTitle: "Ilimitado",
+          modalMessage:
+            `
+2- Todos têm o mesmo fim: o justo e o injusto, o bom e puro e o impuro, aqueles que oferecem sacrifícios e aqueles que não oferecem sacrifícios. O bom é igual ao pecador; quem faz juramentos é igual àquele que pensa antes de fazer um juramento.
+3- Isto é algo aflitivo que acontece debaixo do sol: visto que todos têm o mesmo fim, o coração dos humanos está cheio de maldade; e há loucura no seu coração durante a sua vida, e depois eles morrem!
+4- Há esperança para aquele que está entre os vivos, porque é melhor o cão vivo do que o leão morto.
+5- Pois os vivos sabema que morrerão, mas os mortos não sabem absolutamente nada, nem têm mais recompensa, porque toda lembrança deles caiu no esquecimento.
+6- Também seu amor, seu ódio e seu ciúme já não existem, e eles não têm mais parte em nada do que se faz debaixo do sol.
+  `,
+          href: "",
+          modalImages: [
+            "/images/semimagem.gif"
+          ]
+        },        
+      ]
 
   function handleOpen(item: ActionItem) {
     setSelectedItem(item)
@@ -500,6 +543,51 @@ export default function AcademicWorks() {
         </div>
         <div className="space-y-8">
           {actions5.map((action, idx) => (
+            <div
+              key={action.label + idx}
+              className="relative group transform hover:scale-[1.02] transition-transform duration-300 cursor-pointer"
+              onClick={() => handleOpen(action)}
+            >
+              {/* Moldura decorativa */}
+              <div className="absolute inset-0 border-4 border-amber-700 rounded-lg pointer-events-none"></div>
+              <div className="absolute inset-1 border-2 border-amber-500/50 rounded pointer-events-none"></div>
+              
+              {/* Carta de trabalho */}
+              <div className="relative w-full min-h-32 rounded bg-stone-800 overflow-hidden shadow-lg p-6">
+                {/* Conteúdo */}
+                <div className="flex flex-col h-full">
+                  <div className="flex-grow">
+                    <h3 className="text-xl font-pixel text-amber-200">
+                      {action.label}
+                    </h3>
+                    <p className="text-amber-100 mt-2 text-sm line-clamp-3">
+                      {action.modalMessage.substring(0, 150)}...
+                    </p>
+                  </div>
+                  
+                  {/* Rodapé */}
+                  <div className="mt-4 flex justify-between items-center">
+                    <div className="bg-amber-700 text-amber-100 font-pixel text-xs px-2 py-1 rounded-full">
+                    {action.modalTitle.includes("Ilimitado") ? "Ilimitado" :
+                       action.modalTitle.includes("7 Minutos") ? "7 Minutos" :
+                       action.modalTitle.includes("10 Minutos") ? "10 Minutos" :
+                       action.modalTitle.includes("15 Minutos") ? "15 Minutos" :
+                       action.modalTitle.includes("30 Minutos") ? "30 Minutos" : "Vazio"}                    
+                    </div>
+                    <span className="text-amber-300 text-sm font-pixel">
+                      Clique para ver detalhes
+                    </span>
+                  </div>
+                </div>
+              </div>
+              </div>
+          ))}
+                            </div>
+        <div className="px-4 py-12 font-pixel text-purple-500 border-l-2 border-amber-500 text-[25px]">
+            Morte
+        </div>
+        <div className="space-y-8">
+          {actions6.map((action, idx) => (
             <div
               key={action.label + idx}
               className="relative group transform hover:scale-[1.02] transition-transform duration-300 cursor-pointer"
