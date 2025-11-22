@@ -133,6 +133,36 @@ E quando nós respondemos a Ira com Paz essa pessoa vai ficar pensando sobre iss
           "/images/semimagem.gif"
         ]
       },
+      {
+        label: "Apresentação de como Responder aos desastres",
+        modalTitle: "7 Minutos",
+        modalMessage:
+          `Bom dia a todos, parabens aos irmãos por apoiar a saída de campo. 
+
+Hoje para nossa consideração eu gostaria de abordar um tema que está causando preocupações aos moradores, que é sobre desastres naturais... como tivemos a recente catastrofe do Rio bonito do Iguaçu onde 90% da cidade foi destruida ou danificada. 
+
+E muitas pessoas principalmente lá onde foram afetados podem acabar se perguntando:
+
+Porque estou passando por essa situação?
+
+Ou se é uma punição divina? como muitos ainda acreditam que Deus provoca desastres para punir os maus, as vezes até apontando relatos biblicos como o (DILUVIO).
+
+Mas vamos ver um texto que ajuda na resposta para o Morador? (Leia 1 João 4:8)
+
+8 - Quem não ama não conhece a Deus, porque Deus é amor.
+
+Como podemos aplicar esses textos conversando com o Morador?
+
+Isso mesmo, muitos acham que Deus controla o mundo, e pode surgir a pergunta: se não é Deus quem governa, quem governa?
+
+Ai podemos entregar o folheto que faz essa mesma pergunta. (Quem realmente controla o Mundo?) ai podemos ler o texto de (1 João 5:19) onde vai dar uma resposta para ele
+
+Muito bem irmãos, essa era a consideração para o dia de hoje`,
+        href: "",
+        modalImages: [
+          "/images/semimagem.gif"
+        ]
+      },
   ]
   const actions2: ActionItem[] = [
     {
